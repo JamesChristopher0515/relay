@@ -1,0 +1,2 @@
+export default function resolveEngine(engineName: string): import("../engines/AnthropicChatEngine").AnthropicChatEngine | import("../engines/GPTChatEngine").GPTChatEngine;
+//# sourceMappingURL=resolveEngine.d.ts.map

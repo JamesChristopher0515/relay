@@ -1,0 +1,58 @@
+{
+  "cli": {
+    "version": "7.6.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development",
+      "env": {
+        "API_URL": "https://api.relayapp.co.uk/v1",
+        "API_URL_2": "https://api.relayapp.co.uk/v1"
+      }
+    },
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "ios": {
+        "simulator": true
+      },
+      "channel": "production",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "NODE_ENV": "production",
+        "API_URL": "https://api.relayapp.co.uk/v1",
+        "API_URL_2": "https://api.relayapp.co.uk/v1"
+      }
+    },
+    "production": {
+      "env": {
+        "NODE_ENV": "production",
+        "API_URL": "https://api.relayapp.co.uk/v1",
+        "API_URL_2": "https://api.relayapp.co.uk/v1"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleTeamId": "F2M3B2RRU6",
+        "ascAppId": "1637090305"
+      },
+      "android": {
+        "track": "production",
+        "releaseStatus": "draft",
+        "serviceAccountKeyPath": "/Users/davidcharles/.keys/relay-playstore-submitter.json"
+      }
+    }
+  }
+}

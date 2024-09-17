@@ -1,0 +1,54 @@
+{
+  "name": "@bbuild/machine2",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./Opts": {
+      "import": "./dist/Opts.js",
+      "require": "./dist/cjs/Opts.js",
+      "types": "./dist/Opts.d.ts"
+    },
+    "./StateMachineTransitions": {
+      "import": "./dist/StateMachineTransitions.js",
+      "require": "./dist/cjs/StateMachineTransitions.js",
+      "types": "./dist/StateMachineTransitions.d.ts"
+    },
+    "./_deps": {
+      "import": "./dist/_deps.js",
+      "require": "./dist/cjs/_deps.js",
+      "types": "./dist/_deps.d.ts"
+    },
+    "./createStateMachine": {
+      "import": "./dist/createStateMachine.js",
+      "require": "./dist/cjs/createStateMachine.js",
+      "types": "./dist/createStateMachine.d.ts"
+    },
+    "./index": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./serialisation": {
+      "import": "./dist/serialisation.js",
+      "require": "./dist/cjs/serialisation.js",
+      "types": "./dist/serialisation.d.ts"
+    }
+  },
+  "dependencies": {
+    "rxjs": "7.8.1",
+    "@bbuild/deps": "../deps",
+    "@bbuild/errors": "../errors"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "typescript": "4.9.5"
+  },
+  "main": "dist/cjs/index.js",
+  "index": "dist/cjs/index.js",
+  "module": "dist/index.js"
+}

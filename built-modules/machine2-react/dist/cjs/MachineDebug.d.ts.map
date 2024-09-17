@@ -1,0 +1,1 @@
+{"version":3,"file":"MachineDebug.d.ts","sourceRoot":"/Volumes/SSD/Github/relay/modules/machine2-react/src","sources":["MachineDebug.tsx"],"mappings":"AACA,OAAO,EAAE,YAAY,EAAE,MAAM,4CAA4C,CAAA;AAEzE,MAAM,WAAW,iBAAiB;IAChC,OAAO,EAAE,YAAY,CAAC,GAAG,EAAE,GAAG,EAAE,GAAG,CAAC,CAAA;CACrC;AACD,MAAM,WAAW,qBAAqB;CAErC;AAED,MAAM,CAAC,OAAO,UAAU,YAAY,CAAC,KAAK,EAAE,iBAAiB,eAS5D"}

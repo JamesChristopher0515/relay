@@ -1,0 +1,75 @@
+{
+  "name": "@bbuild/llm",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./ParseMessage": {
+      "import": "./dist/ParseMessage.js",
+      "require": "./dist/cjs/ParseMessage.js",
+      "types": "./dist/ParseMessage.d.ts"
+    },
+    "./_deps": {
+      "import": "./dist/_deps.js",
+      "require": "./dist/cjs/_deps.js",
+      "types": "./dist/_deps.d.ts"
+    },
+    "./engines/*": {
+      "import": "./dist/engines/*.js",
+      "require": "./dist/cjs/engines/*.js",
+      "types": "./dist/engines/*.d.ts"
+    },
+    "./engines": {
+      "import": "./dist/engines/index.js",
+      "require": "./dist/cjs/engines/index.js",
+      "types": "./dist/engines/index.d.ts"
+    },
+    "./getCodeCompletion": {
+      "import": "./dist/getCodeCompletion.js",
+      "require": "./dist/cjs/getCodeCompletion.js",
+      "types": "./dist/getCodeCompletion.d.ts"
+    },
+    "./getZodCompletion": {
+      "import": "./dist/getZodCompletion.js",
+      "require": "./dist/cjs/getZodCompletion.js",
+      "types": "./dist/getZodCompletion.d.ts"
+    },
+    "./index": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./strategies/*": {
+      "import": "./dist/strategies/*.js",
+      "require": "./dist/cjs/strategies/*.js",
+      "types": "./dist/strategies/*.d.ts"
+    },
+    "./util/*": {
+      "import": "./dist/util/*.js",
+      "require": "./dist/cjs/util/*.js",
+      "types": "./dist/util/*.d.ts"
+    }
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.4.4",
+    "gpt-tokenizer": "2.1.1",
+    "openai-gpt-token-counter": "^1.0.3",
+    "rxjs": "7.8.1",
+    "zod": "3.22.4",
+    "@bbuild/deps": "../deps",
+    "@bbuild/errors": "../errors",
+    "@bbuild/open-ai": "../open-ai",
+    "@bbuild/schema": "../schema"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "typescript": "4.9.5"
+  },
+  "main": "dist/cjs/index.js",
+  "index": "dist/cjs/index.js",
+  "module": "dist/index.js"
+}

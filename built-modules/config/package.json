@@ -1,0 +1,65 @@
+{
+  "name": "@bbuild/config",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./_deps": {
+      "import": "./dist/_deps.js",
+      "require": "./dist/cjs/_deps.js",
+      "types": "./dist/_deps.d.ts"
+    },
+    "./cli/*": {
+      "import": "./dist/cli/*.js",
+      "require": "./dist/cjs/cli/*.js",
+      "types": "./dist/cli/*.d.ts"
+    },
+    "./createHardConfigs": {
+      "import": "./dist/createHardConfigs.js",
+      "require": "./dist/cjs/createHardConfigs.js",
+      "types": "./dist/createHardConfigs.d.ts"
+    },
+    "./index": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./mergeConfigs": {
+      "import": "./dist/mergeConfigs.js",
+      "require": "./dist/cjs/mergeConfigs.js",
+      "types": "./dist/mergeConfigs.d.ts"
+    },
+    "./postbuild": {
+      "import": "./dist/postbuild.js",
+      "require": "./dist/cjs/postbuild.js",
+      "types": "./dist/postbuild.d.ts"
+    },
+    "./tryLoadConfig": {
+      "import": "./dist/tryLoadConfig.js",
+      "require": "./dist/cjs/tryLoadConfig.js",
+      "types": "./dist/tryLoadConfig.d.ts"
+    }
+  },
+  "bin": "dist/cjs/cli.sh",
+  "dependencies": {
+    "@types/dotenv-flow": "^3.2.0",
+    "dotenv-flow": "^3.2.0",
+    "zod": "3.22.4",
+    "@bbuild/core": "../core",
+    "@bbuild/deps": "../deps",
+    "@bbuild/json": "../json",
+    "@bbuild/node-modules": "../node-modules",
+    "@bbuild/yml": "../yml"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "typescript": "4.9.5"
+  },
+  "main": "dist/cjs/index.js",
+  "index": "dist/cjs/index.js",
+  "module": "dist/index.js"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"tryLoadConfig.d.ts","sourceRoot":"/Volumes/SSD/Github/relay/modules/config/src","sources":["tryLoadConfig.ts"],"mappings":"AAKA,wBAAgB,eAAe,CAC7B,MAAM,EAAE;IAAE,IAAI,EAAE,GAAG,CAAC;IAAC,YAAY,EAAE,OAAO,CAAC;IAAC,UAAU,EAAE,MAAM,CAAA;CAAE,EAChE,SAAS,EAAE,MAAM,EACjB,MAAM,GAAE,EAAO,MAuBhB;AAED,wBAAsB,8BAA8B,CAAC,IAAI,EAAE,MAAM;;;;;;;GAmBhE"}

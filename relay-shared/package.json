@@ -1,0 +1,1017 @@
+{
+  "name": "relay-shared",
+  "version": "0.1.0",
+  "main": "dist/cjs/index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@tsconfig/node16": "1.0.3",
+    "@types/jest": "29.4.0",
+    "@types/node": "16.11.6",
+    "@types/react": "18.0.15",
+    "chokidar": "3.5.2",
+    "jest": "29.4.1",
+    "ts-jest": "29.0.5",
+    "ts-node": "10.9.1",
+    "ts-patch": "2.1.0",
+    "typescript-transform-paths": "3.4.6"
+  },
+  "dependencies": {
+    "@breejs/later": "4.1.0",
+    "@mtyk/machine": "0.1.47",
+    "@types/prettier": "2.4.2",
+    "@typescript-eslint/eslint-plugin": "5.30.6",
+    "@typescript-eslint/parser": "5.30.6",
+    "dayjs": "1.11.7",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "glob": "8.0.3",
+    "md5-file": "5.0.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-jsdoc": "0.3.38",
+    "react-native-twilio-video-webrtc": "3.1.0",
+    "react-use": "17.4.0",
+    "remeda": "1.6.1",
+    "twilio-video": "2.26.1",
+    "typescript": "4.9.5"
+  },
+  "packageManager": "yarn@3.2.1",
+  "module": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json",
+    "./RelaySchema": {
+      "import": "./RelaySchema.js",
+      "require": "./dist/cjs/RelaySchema.js"
+    },
+    "./RelayTypes": {
+      "import": "./RelayTypes.js",
+      "require": "./dist/cjs/RelayTypes.js"
+    },
+    "./api/hooks/*": {
+      "import": "./api/hooks/*.js",
+      "require": "./dist/cjs/api/hooks/*.js"
+    },
+    "./api/hooks": {
+      "import": "./api/hooks/index.js",
+      "require": "./dist/cjs/api/hooks/index.js"
+    },
+    "./api/*": {
+      "import": "./api/*.js",
+      "require": "./dist/cjs/api/*.js"
+    },
+    "./api": {
+      "import": "./api/index.js",
+      "require": "./dist/cjs/api/index.js"
+    },
+    "./appointments/components/client/*": {
+      "import": "./appointments/components/client/*.js",
+      "require": "./dist/cjs/appointments/components/client/*.js"
+    },
+    "./appointments/components/client": {
+      "import": "./appointments/components/client/index.js",
+      "require": "./dist/cjs/appointments/components/client/index.js"
+    },
+    "./appointments/components/helpers/*": {
+      "import": "./appointments/components/helpers/*.js",
+      "require": "./dist/cjs/appointments/components/helpers/*.js"
+    },
+    "./appointments/components/helpers": {
+      "import": "./appointments/components/helpers/index.js",
+      "require": "./dist/cjs/appointments/components/helpers/index.js"
+    },
+    "./appointments/components/*": {
+      "import": "./appointments/components/*.js",
+      "require": "./dist/cjs/appointments/components/*.js"
+    },
+    "./appointments/components": {
+      "import": "./appointments/components/index.js",
+      "require": "./dist/cjs/appointments/components/index.js"
+    },
+    "./appointments/helpers/*": {
+      "import": "./appointments/helpers/*.js",
+      "require": "./dist/cjs/appointments/helpers/*.js"
+    },
+    "./appointments/helpers": {
+      "import": "./appointments/helpers/index.js",
+      "require": "./dist/cjs/appointments/helpers/index.js"
+    },
+    "./appointments/hooks/practitioner/*": {
+      "import": "./appointments/hooks/practitioner/*.js",
+      "require": "./dist/cjs/appointments/hooks/practitioner/*.js"
+    },
+    "./appointments/hooks/practitioner": {
+      "import": "./appointments/hooks/practitioner/index.js",
+      "require": "./dist/cjs/appointments/hooks/practitioner/index.js"
+    },
+    "./appointments/hooks/*": {
+      "import": "./appointments/hooks/*.js",
+      "require": "./dist/cjs/appointments/hooks/*.js"
+    },
+    "./appointments/hooks": {
+      "import": "./appointments/hooks/index.js",
+      "require": "./dist/cjs/appointments/hooks/index.js"
+    },
+    "./appointments/machines/*": {
+      "import": "./appointments/machines/*.js",
+      "require": "./dist/cjs/appointments/machines/*.js"
+    },
+    "./appointments/machines": {
+      "import": "./appointments/machines/index.js",
+      "require": "./dist/cjs/appointments/machines/index.js"
+    },
+    "./appointments/types/*": {
+      "import": "./appointments/types/*.js",
+      "require": "./dist/cjs/appointments/types/*.js"
+    },
+    "./appointments/types": {
+      "import": "./appointments/types/index.js",
+      "require": "./dist/cjs/appointments/types/index.js"
+    },
+    "./appointments/*": {
+      "import": "./appointments/*.js",
+      "require": "./dist/cjs/appointments/*.js"
+    },
+    "./appointments": {
+      "import": "./appointments/index.js",
+      "require": "./dist/cjs/appointments/index.js"
+    },
+    "./assigned-journeys/helpers/*": {
+      "import": "./assigned-journeys/helpers/*.js",
+      "require": "./dist/cjs/assigned-journeys/helpers/*.js"
+    },
+    "./assigned-journeys/helpers": {
+      "import": "./assigned-journeys/helpers/index.js",
+      "require": "./dist/cjs/assigned-journeys/helpers/index.js"
+    },
+    "./assigned-journeys/hooks/*": {
+      "import": "./assigned-journeys/hooks/*.js",
+      "require": "./dist/cjs/assigned-journeys/hooks/*.js"
+    },
+    "./assigned-journeys/hooks": {
+      "import": "./assigned-journeys/hooks/index.js",
+      "require": "./dist/cjs/assigned-journeys/hooks/index.js"
+    },
+    "./assigned-journeys/*": {
+      "import": "./assigned-journeys/*.js",
+      "require": "./dist/cjs/assigned-journeys/*.js"
+    },
+    "./assigned-journeys": {
+      "import": "./assigned-journeys/index.js",
+      "require": "./dist/cjs/assigned-journeys/index.js"
+    },
+    "./calendar/components/*": {
+      "import": "./calendar/components/*.js",
+      "require": "./dist/cjs/calendar/components/*.js"
+    },
+    "./calendar/components": {
+      "import": "./calendar/components/index.js",
+      "require": "./dist/cjs/calendar/components/index.js"
+    },
+    "./calendar/*": {
+      "import": "./calendar/*.js",
+      "require": "./dist/cjs/calendar/*.js"
+    },
+    "./calendar": {
+      "import": "./calendar/index.js",
+      "require": "./dist/cjs/calendar/index.js"
+    },
+    "./case-notes/hooks/*": {
+      "import": "./case-notes/hooks/*.js",
+      "require": "./dist/cjs/case-notes/hooks/*.js"
+    },
+    "./case-notes/hooks": {
+      "import": "./case-notes/hooks/index.js",
+      "require": "./dist/cjs/case-notes/hooks/index.js"
+    },
+    "./case-notes/*": {
+      "import": "./case-notes/*.js",
+      "require": "./dist/cjs/case-notes/*.js"
+    },
+    "./case-notes": {
+      "import": "./case-notes/index.js",
+      "require": "./dist/cjs/case-notes/index.js"
+    },
+    "./check-in/controllers/*": {
+      "import": "./check-in/controllers/*.js",
+      "require": "./dist/cjs/check-in/controllers/*.js"
+    },
+    "./check-in/controllers": {
+      "import": "./check-in/controllers/index.js",
+      "require": "./dist/cjs/check-in/controllers/index.js"
+    },
+    "./check-in/helpers/*": {
+      "import": "./check-in/helpers/*.js",
+      "require": "./dist/cjs/check-in/helpers/*.js"
+    },
+    "./check-in/helpers": {
+      "import": "./check-in/helpers/index.js",
+      "require": "./dist/cjs/check-in/helpers/index.js"
+    },
+    "./check-in/hooks/*": {
+      "import": "./check-in/hooks/*.js",
+      "require": "./dist/cjs/check-in/hooks/*.js"
+    },
+    "./check-in/hooks": {
+      "import": "./check-in/hooks/index.js",
+      "require": "./dist/cjs/check-in/hooks/index.js"
+    },
+    "./check-in/reducers/*": {
+      "import": "./check-in/reducers/*.js",
+      "require": "./dist/cjs/check-in/reducers/*.js"
+    },
+    "./check-in/reducers": {
+      "import": "./check-in/reducers/index.js",
+      "require": "./dist/cjs/check-in/reducers/index.js"
+    },
+    "./check-in/*": {
+      "import": "./check-in/*.js",
+      "require": "./dist/cjs/check-in/*.js"
+    },
+    "./check-in": {
+      "import": "./check-in/index.js",
+      "require": "./dist/cjs/check-in/index.js"
+    },
+    "./client-invite/components/*": {
+      "import": "./client-invite/components/*.js",
+      "require": "./dist/cjs/client-invite/components/*.js"
+    },
+    "./client-invite/components": {
+      "import": "./client-invite/components/index.js",
+      "require": "./dist/cjs/client-invite/components/index.js"
+    },
+    "./client-invite/machines/*": {
+      "import": "./client-invite/machines/*.js",
+      "require": "./dist/cjs/client-invite/machines/*.js"
+    },
+    "./client-invite/machines": {
+      "import": "./client-invite/machines/index.js",
+      "require": "./dist/cjs/client-invite/machines/index.js"
+    },
+    "./client-invite/*": {
+      "import": "./client-invite/*.js",
+      "require": "./dist/cjs/client-invite/*.js"
+    },
+    "./client-invite": {
+      "import": "./client-invite/index.js",
+      "require": "./dist/cjs/client-invite/index.js"
+    },
+    "./clients/components/*": {
+      "import": "./clients/components/*.js",
+      "require": "./dist/cjs/clients/components/*.js"
+    },
+    "./clients/components": {
+      "import": "./clients/components/index.js",
+      "require": "./dist/cjs/clients/components/index.js"
+    },
+    "./clients/helpers/*": {
+      "import": "./clients/helpers/*.js",
+      "require": "./dist/cjs/clients/helpers/*.js"
+    },
+    "./clients/helpers": {
+      "import": "./clients/helpers/index.js",
+      "require": "./dist/cjs/clients/helpers/index.js"
+    },
+    "./clients/hooks/*": {
+      "import": "./clients/hooks/*.js",
+      "require": "./dist/cjs/clients/hooks/*.js"
+    },
+    "./clients/hooks": {
+      "import": "./clients/hooks/index.js",
+      "require": "./dist/cjs/clients/hooks/index.js"
+    },
+    "./clients/*": {
+      "import": "./clients/*.js",
+      "require": "./dist/cjs/clients/*.js"
+    },
+    "./clients": {
+      "import": "./clients/index.js",
+      "require": "./dist/cjs/clients/index.js"
+    },
+    "./commands/components/*": {
+      "import": "./commands/components/*.js",
+      "require": "./dist/cjs/commands/components/*.js"
+    },
+    "./commands/components": {
+      "import": "./commands/components/index.js",
+      "require": "./dist/cjs/commands/components/index.js"
+    },
+    "./commands/hooks/*": {
+      "import": "./commands/hooks/*.js",
+      "require": "./dist/cjs/commands/hooks/*.js"
+    },
+    "./commands/hooks": {
+      "import": "./commands/hooks/index.js",
+      "require": "./dist/cjs/commands/hooks/index.js"
+    },
+    "./commands/*": {
+      "import": "./commands/*.js",
+      "require": "./dist/cjs/commands/*.js"
+    },
+    "./commands": {
+      "import": "./commands/index.js",
+      "require": "./dist/cjs/commands/index.js"
+    },
+    "./content/helpers/*": {
+      "import": "./content/helpers/*.js",
+      "require": "./dist/cjs/content/helpers/*.js"
+    },
+    "./content/helpers": {
+      "import": "./content/helpers/index.js",
+      "require": "./dist/cjs/content/helpers/index.js"
+    },
+    "./content/*": {
+      "import": "./content/*.js",
+      "require": "./dist/cjs/content/*.js"
+    },
+    "./content": {
+      "import": "./content/index.js",
+      "require": "./dist/cjs/content/index.js"
+    },
+    "./conversations/components/*": {
+      "import": "./conversations/components/*.js",
+      "require": "./dist/cjs/conversations/components/*.js"
+    },
+    "./conversations/components": {
+      "import": "./conversations/components/index.js",
+      "require": "./dist/cjs/conversations/components/index.js"
+    },
+    "./conversations/controllers/*": {
+      "import": "./conversations/controllers/*.js",
+      "require": "./dist/cjs/conversations/controllers/*.js"
+    },
+    "./conversations/controllers": {
+      "import": "./conversations/controllers/index.js",
+      "require": "./dist/cjs/conversations/controllers/index.js"
+    },
+    "./conversations/helpers/*": {
+      "import": "./conversations/helpers/*.js",
+      "require": "./dist/cjs/conversations/helpers/*.js"
+    },
+    "./conversations/helpers": {
+      "import": "./conversations/helpers/index.js",
+      "require": "./dist/cjs/conversations/helpers/index.js"
+    },
+    "./conversations/*": {
+      "import": "./conversations/*.js",
+      "require": "./dist/cjs/conversations/*.js"
+    },
+    "./conversations": {
+      "import": "./conversations/index.js",
+      "require": "./dist/cjs/conversations/index.js"
+    },
+    "./core/components/*": {
+      "import": "./core/components/*.js",
+      "require": "./dist/cjs/core/components/*.js"
+    },
+    "./core/components": {
+      "import": "./core/components/index.js",
+      "require": "./dist/cjs/core/components/index.js"
+    },
+    "./core/contexts/*": {
+      "import": "./core/contexts/*.js",
+      "require": "./dist/cjs/core/contexts/*.js"
+    },
+    "./core/contexts": {
+      "import": "./core/contexts/index.js",
+      "require": "./dist/cjs/core/contexts/index.js"
+    },
+    "./core/helpers/*": {
+      "import": "./core/helpers/*.js",
+      "require": "./dist/cjs/core/helpers/*.js"
+    },
+    "./core/helpers": {
+      "import": "./core/helpers/index.js",
+      "require": "./dist/cjs/core/helpers/index.js"
+    },
+    "./core/hooks/*": {
+      "import": "./core/hooks/*.js",
+      "require": "./dist/cjs/core/hooks/*.js"
+    },
+    "./core/hooks": {
+      "import": "./core/hooks/index.js",
+      "require": "./dist/cjs/core/hooks/index.js"
+    },
+    "./core/*": {
+      "import": "./core/*.js",
+      "require": "./dist/cjs/core/*.js"
+    },
+    "./core": {
+      "import": "./core/index.js",
+      "require": "./dist/cjs/core/index.js"
+    },
+    "./debug/*": {
+      "import": "./debug/*.js",
+      "require": "./dist/cjs/debug/*.js"
+    },
+    "./debug": {
+      "import": "./debug/index.js",
+      "require": "./dist/cjs/debug/index.js"
+    },
+    "./entities/components/*": {
+      "import": "./entities/components/*.js",
+      "require": "./dist/cjs/entities/components/*.js"
+    },
+    "./entities/components": {
+      "import": "./entities/components/index.js",
+      "require": "./dist/cjs/entities/components/index.js"
+    },
+    "./entities/helpers/*": {
+      "import": "./entities/helpers/*.js",
+      "require": "./dist/cjs/entities/helpers/*.js"
+    },
+    "./entities/helpers": {
+      "import": "./entities/helpers/index.js",
+      "require": "./dist/cjs/entities/helpers/index.js"
+    },
+    "./entities/hooks/*": {
+      "import": "./entities/hooks/*.js",
+      "require": "./dist/cjs/entities/hooks/*.js"
+    },
+    "./entities/hooks": {
+      "import": "./entities/hooks/index.js",
+      "require": "./dist/cjs/entities/hooks/index.js"
+    },
+    "./entities/*": {
+      "import": "./entities/*.js",
+      "require": "./dist/cjs/entities/*.js"
+    },
+    "./entities": {
+      "import": "./entities/index.js",
+      "require": "./dist/cjs/entities/index.js"
+    },
+    "./entries/controllers/*": {
+      "import": "./entries/controllers/*.js",
+      "require": "./dist/cjs/entries/controllers/*.js"
+    },
+    "./entries/controllers": {
+      "import": "./entries/controllers/index.js",
+      "require": "./dist/cjs/entries/controllers/index.js"
+    },
+    "./entries/*": {
+      "import": "./entries/*.js",
+      "require": "./dist/cjs/entries/*.js"
+    },
+    "./entries": {
+      "import": "./entries/index.js",
+      "require": "./dist/cjs/entries/index.js"
+    },
+    "./feelings/helpers/*": {
+      "import": "./feelings/helpers/*.js",
+      "require": "./dist/cjs/feelings/helpers/*.js"
+    },
+    "./feelings/helpers": {
+      "import": "./feelings/helpers/index.js",
+      "require": "./dist/cjs/feelings/helpers/index.js"
+    },
+    "./feelings/*": {
+      "import": "./feelings/*.js",
+      "require": "./dist/cjs/feelings/*.js"
+    },
+    "./feelings": {
+      "import": "./feelings/index.js",
+      "require": "./dist/cjs/feelings/index.js"
+    },
+    "./files/hooks/*": {
+      "import": "./files/hooks/*.js",
+      "require": "./dist/cjs/files/hooks/*.js"
+    },
+    "./files/hooks": {
+      "import": "./files/hooks/index.js",
+      "require": "./dist/cjs/files/hooks/index.js"
+    },
+    "./files/*": {
+      "import": "./files/*.js",
+      "require": "./dist/cjs/files/*.js"
+    },
+    "./files": {
+      "import": "./files/index.js",
+      "require": "./dist/cjs/files/index.js"
+    },
+    "./frontend/api/helpers/*": {
+      "import": "./frontend/api/helpers/*.js",
+      "require": "./dist/cjs/frontend/api/helpers/*.js"
+    },
+    "./frontend/api/helpers": {
+      "import": "./frontend/api/helpers/index.js",
+      "require": "./dist/cjs/frontend/api/helpers/index.js"
+    },
+    "./frontend/api/hooks/*": {
+      "import": "./frontend/api/hooks/*.js",
+      "require": "./dist/cjs/frontend/api/hooks/*.js"
+    },
+    "./frontend/api/hooks": {
+      "import": "./frontend/api/hooks/index.js",
+      "require": "./dist/cjs/frontend/api/hooks/index.js"
+    },
+    "./frontend/api/reducers/*": {
+      "import": "./frontend/api/reducers/*.js",
+      "require": "./dist/cjs/frontend/api/reducers/*.js"
+    },
+    "./frontend/api/reducers": {
+      "import": "./frontend/api/reducers/index.js",
+      "require": "./dist/cjs/frontend/api/reducers/index.js"
+    },
+    "./frontend/api/*": {
+      "import": "./frontend/api/*.js",
+      "require": "./dist/cjs/frontend/api/*.js"
+    },
+    "./frontend/api": {
+      "import": "./frontend/api/index.js",
+      "require": "./dist/cjs/frontend/api/index.js"
+    },
+    "./frontend/chat/components/*": {
+      "import": "./frontend/chat/components/*.js",
+      "require": "./dist/cjs/frontend/chat/components/*.js"
+    },
+    "./frontend/chat/components": {
+      "import": "./frontend/chat/components/index.js",
+      "require": "./dist/cjs/frontend/chat/components/index.js"
+    },
+    "./frontend/chat/*": {
+      "import": "./frontend/chat/*.js",
+      "require": "./dist/cjs/frontend/chat/*.js"
+    },
+    "./frontend/chat": {
+      "import": "./frontend/chat/index.js",
+      "require": "./dist/cjs/frontend/chat/index.js"
+    },
+    "./frontend/check-ins/hooks/*": {
+      "import": "./frontend/check-ins/hooks/*.js",
+      "require": "./dist/cjs/frontend/check-ins/hooks/*.js"
+    },
+    "./frontend/check-ins/hooks": {
+      "import": "./frontend/check-ins/hooks/index.js",
+      "require": "./dist/cjs/frontend/check-ins/hooks/index.js"
+    },
+    "./frontend/check-ins/*": {
+      "import": "./frontend/check-ins/*.js",
+      "require": "./dist/cjs/frontend/check-ins/*.js"
+    },
+    "./frontend/check-ins": {
+      "import": "./frontend/check-ins/index.js",
+      "require": "./dist/cjs/frontend/check-ins/index.js"
+    },
+    "./frontend/core/components/*": {
+      "import": "./frontend/core/components/*.js",
+      "require": "./dist/cjs/frontend/core/components/*.js"
+    },
+    "./frontend/core/components": {
+      "import": "./frontend/core/components/index.js",
+      "require": "./dist/cjs/frontend/core/components/index.js"
+    },
+    "./frontend/core/helpers/*": {
+      "import": "./frontend/core/helpers/*.js",
+      "require": "./dist/cjs/frontend/core/helpers/*.js"
+    },
+    "./frontend/core/helpers": {
+      "import": "./frontend/core/helpers/index.js",
+      "require": "./dist/cjs/frontend/core/helpers/index.js"
+    },
+    "./frontend/core/hooks/*": {
+      "import": "./frontend/core/hooks/*.js",
+      "require": "./dist/cjs/frontend/core/hooks/*.js"
+    },
+    "./frontend/core/hooks": {
+      "import": "./frontend/core/hooks/index.js",
+      "require": "./dist/cjs/frontend/core/hooks/index.js"
+    },
+    "./frontend/core/*": {
+      "import": "./frontend/core/*.js",
+      "require": "./dist/cjs/frontend/core/*.js"
+    },
+    "./frontend/core": {
+      "import": "./frontend/core/index.js",
+      "require": "./dist/cjs/frontend/core/index.js"
+    },
+    "./frontend/feelings/*": {
+      "import": "./frontend/feelings/*.js",
+      "require": "./dist/cjs/frontend/feelings/*.js"
+    },
+    "./frontend/feelings": {
+      "import": "./frontend/feelings/index.js",
+      "require": "./dist/cjs/frontend/feelings/index.js"
+    },
+    "./frontend/icons/*": {
+      "import": "./frontend/icons/*.js",
+      "require": "./dist/cjs/frontend/icons/*.js"
+    },
+    "./frontend/icons": {
+      "import": "./frontend/icons/index.js",
+      "require": "./dist/cjs/frontend/icons/index.js"
+    },
+    "./frontend/journal-entries/hooks/*": {
+      "import": "./frontend/journal-entries/hooks/*.js",
+      "require": "./dist/cjs/frontend/journal-entries/hooks/*.js"
+    },
+    "./frontend/journal-entries/hooks": {
+      "import": "./frontend/journal-entries/hooks/index.js",
+      "require": "./dist/cjs/frontend/journal-entries/hooks/index.js"
+    },
+    "./frontend/journal-entries/*": {
+      "import": "./frontend/journal-entries/*.js",
+      "require": "./dist/cjs/frontend/journal-entries/*.js"
+    },
+    "./frontend/journal-entries": {
+      "import": "./frontend/journal-entries/index.js",
+      "require": "./dist/cjs/frontend/journal-entries/index.js"
+    },
+    "./frontend/todos/hooks/*": {
+      "import": "./frontend/todos/hooks/*.js",
+      "require": "./dist/cjs/frontend/todos/hooks/*.js"
+    },
+    "./frontend/todos/hooks": {
+      "import": "./frontend/todos/hooks/index.js",
+      "require": "./dist/cjs/frontend/todos/hooks/index.js"
+    },
+    "./frontend/todos/*": {
+      "import": "./frontend/todos/*.js",
+      "require": "./dist/cjs/frontend/todos/*.js"
+    },
+    "./frontend/todos": {
+      "import": "./frontend/todos/index.js",
+      "require": "./dist/cjs/frontend/todos/index.js"
+    },
+    "./frontend/*": {
+      "import": "./frontend/*.js",
+      "require": "./dist/cjs/frontend/*.js"
+    },
+    "./frontend": {
+      "import": "./frontend/index.js",
+      "require": "./dist/cjs/frontend/index.js"
+    },
+    "./goals/controllers/*": {
+      "import": "./goals/controllers/*.js",
+      "require": "./dist/cjs/goals/controllers/*.js"
+    },
+    "./goals/controllers": {
+      "import": "./goals/controllers/index.js",
+      "require": "./dist/cjs/goals/controllers/index.js"
+    },
+    "./goals/helpers/*": {
+      "import": "./goals/helpers/*.js",
+      "require": "./dist/cjs/goals/helpers/*.js"
+    },
+    "./goals/helpers": {
+      "import": "./goals/helpers/index.js",
+      "require": "./dist/cjs/goals/helpers/index.js"
+    },
+    "./goals/hooks/*": {
+      "import": "./goals/hooks/*.js",
+      "require": "./dist/cjs/goals/hooks/*.js"
+    },
+    "./goals/hooks": {
+      "import": "./goals/hooks/index.js",
+      "require": "./dist/cjs/goals/hooks/index.js"
+    },
+    "./goals/*": {
+      "import": "./goals/*.js",
+      "require": "./dist/cjs/goals/*.js"
+    },
+    "./goals": {
+      "import": "./goals/index.js",
+      "require": "./dist/cjs/goals/index.js"
+    },
+    "./hooks/*": {
+      "import": "./hooks/*.js",
+      "require": "./dist/cjs/hooks/*.js"
+    },
+    "./hooks": {
+      "import": "./hooks/index.js",
+      "require": "./dist/cjs/hooks/index.js"
+    },
+    "./journal-entries/controllers/*": {
+      "import": "./journal-entries/controllers/*.js",
+      "require": "./dist/cjs/journal-entries/controllers/*.js"
+    },
+    "./journal-entries/controllers": {
+      "import": "./journal-entries/controllers/index.js",
+      "require": "./dist/cjs/journal-entries/controllers/index.js"
+    },
+    "./journal-entries/helpers/*": {
+      "import": "./journal-entries/helpers/*.js",
+      "require": "./dist/cjs/journal-entries/helpers/*.js"
+    },
+    "./journal-entries/helpers": {
+      "import": "./journal-entries/helpers/index.js",
+      "require": "./dist/cjs/journal-entries/helpers/index.js"
+    },
+    "./journal-entries/*": {
+      "import": "./journal-entries/*.js",
+      "require": "./dist/cjs/journal-entries/*.js"
+    },
+    "./journal-entries": {
+      "import": "./journal-entries/index.js",
+      "require": "./dist/cjs/journal-entries/index.js"
+    },
+    "./journeys/components/*": {
+      "import": "./journeys/components/*.js",
+      "require": "./dist/cjs/journeys/components/*.js"
+    },
+    "./journeys/components": {
+      "import": "./journeys/components/index.js",
+      "require": "./dist/cjs/journeys/components/index.js"
+    },
+    "./journeys/helpers/*": {
+      "import": "./journeys/helpers/*.js",
+      "require": "./dist/cjs/journeys/helpers/*.js"
+    },
+    "./journeys/helpers": {
+      "import": "./journeys/helpers/index.js",
+      "require": "./dist/cjs/journeys/helpers/index.js"
+    },
+    "./journeys/*": {
+      "import": "./journeys/*.js",
+      "require": "./dist/cjs/journeys/*.js"
+    },
+    "./journeys": {
+      "import": "./journeys/index.js",
+      "require": "./dist/cjs/journeys/index.js"
+    },
+    "./layout/components/*": {
+      "import": "./layout/components/*.js",
+      "require": "./dist/cjs/layout/components/*.js"
+    },
+    "./layout/components": {
+      "import": "./layout/components/index.js",
+      "require": "./dist/cjs/layout/components/index.js"
+    },
+    "./layout/controllers/*": {
+      "import": "./layout/controllers/*.js",
+      "require": "./dist/cjs/layout/controllers/*.js"
+    },
+    "./layout/controllers": {
+      "import": "./layout/controllers/index.js",
+      "require": "./dist/cjs/layout/controllers/index.js"
+    },
+    "./layout/*": {
+      "import": "./layout/*.js",
+      "require": "./dist/cjs/layout/*.js"
+    },
+    "./layout": {
+      "import": "./layout/index.js",
+      "require": "./dist/cjs/layout/index.js"
+    },
+    "./machines/helpers/*": {
+      "import": "./machines/helpers/*.js",
+      "require": "./dist/cjs/machines/helpers/*.js"
+    },
+    "./machines/helpers": {
+      "import": "./machines/helpers/index.js",
+      "require": "./dist/cjs/machines/helpers/index.js"
+    },
+    "./machines/hooks/*": {
+      "import": "./machines/hooks/*.js",
+      "require": "./dist/cjs/machines/hooks/*.js"
+    },
+    "./machines/hooks": {
+      "import": "./machines/hooks/index.js",
+      "require": "./dist/cjs/machines/hooks/index.js"
+    },
+    "./machines/*": {
+      "import": "./machines/*.js",
+      "require": "./dist/cjs/machines/*.js"
+    },
+    "./machines": {
+      "import": "./machines/index.js",
+      "require": "./dist/cjs/machines/index.js"
+    },
+    "./models/helpers/*": {
+      "import": "./models/helpers/*.js",
+      "require": "./dist/cjs/models/helpers/*.js"
+    },
+    "./models/helpers": {
+      "import": "./models/helpers/index.js",
+      "require": "./dist/cjs/models/helpers/index.js"
+    },
+    "./models/*": {
+      "import": "./models/*.js",
+      "require": "./dist/cjs/models/*.js"
+    },
+    "./models": {
+      "import": "./models/index.js",
+      "require": "./dist/cjs/models/index.js"
+    },
+    "./questionnaires/helpers/*": {
+      "import": "./questionnaires/helpers/*.js",
+      "require": "./dist/cjs/questionnaires/helpers/*.js"
+    },
+    "./questionnaires/helpers": {
+      "import": "./questionnaires/helpers/index.js",
+      "require": "./dist/cjs/questionnaires/helpers/index.js"
+    },
+    "./questionnaires/*": {
+      "import": "./questionnaires/*.js",
+      "require": "./dist/cjs/questionnaires/*.js"
+    },
+    "./questionnaires": {
+      "import": "./questionnaires/index.js",
+      "require": "./dist/cjs/questionnaires/index.js"
+    },
+    "./reasons/helpers/*": {
+      "import": "./reasons/helpers/*.js",
+      "require": "./dist/cjs/reasons/helpers/*.js"
+    },
+    "./reasons/helpers": {
+      "import": "./reasons/helpers/index.js",
+      "require": "./dist/cjs/reasons/helpers/index.js"
+    },
+    "./reasons/*": {
+      "import": "./reasons/*.js",
+      "require": "./dist/cjs/reasons/*.js"
+    },
+    "./reasons": {
+      "import": "./reasons/index.js",
+      "require": "./dist/cjs/reasons/index.js"
+    },
+    "./reducers/helpers/*": {
+      "import": "./reducers/helpers/*.js",
+      "require": "./dist/cjs/reducers/helpers/*.js"
+    },
+    "./reducers/helpers": {
+      "import": "./reducers/helpers/index.js",
+      "require": "./dist/cjs/reducers/helpers/index.js"
+    },
+    "./reducers/*": {
+      "import": "./reducers/*.js",
+      "require": "./dist/cjs/reducers/*.js"
+    },
+    "./reducers": {
+      "import": "./reducers/index.js",
+      "require": "./dist/cjs/reducers/index.js"
+    },
+    "./reporting-stats/helpers/collections/*": {
+      "import": "./reporting-stats/helpers/collections/*.js",
+      "require": "./dist/cjs/reporting-stats/helpers/collections/*.js"
+    },
+    "./reporting-stats/helpers/collections": {
+      "import": "./reporting-stats/helpers/collections/index.js",
+      "require": "./dist/cjs/reporting-stats/helpers/collections/index.js"
+    },
+    "./reporting-stats/helpers/*": {
+      "import": "./reporting-stats/helpers/*.js",
+      "require": "./dist/cjs/reporting-stats/helpers/*.js"
+    },
+    "./reporting-stats/helpers": {
+      "import": "./reporting-stats/helpers/index.js",
+      "require": "./dist/cjs/reporting-stats/helpers/index.js"
+    },
+    "./reporting-stats/*": {
+      "import": "./reporting-stats/*.js",
+      "require": "./dist/cjs/reporting-stats/*.js"
+    },
+    "./reporting-stats": {
+      "import": "./reporting-stats/index.js",
+      "require": "./dist/cjs/reporting-stats/index.js"
+    },
+    "./resources/helpers/*": {
+      "import": "./resources/helpers/*.js",
+      "require": "./dist/cjs/resources/helpers/*.js"
+    },
+    "./resources/helpers": {
+      "import": "./resources/helpers/index.js",
+      "require": "./dist/cjs/resources/helpers/index.js"
+    },
+    "./resources/*": {
+      "import": "./resources/*.js",
+      "require": "./dist/cjs/resources/*.js"
+    },
+    "./resources": {
+      "import": "./resources/index.js",
+      "require": "./dist/cjs/resources/index.js"
+    },
+    "./scheduling/*": {
+      "import": "./scheduling/*.js",
+      "require": "./dist/cjs/scheduling/*.js"
+    },
+    "./scheduling": {
+      "import": "./scheduling/index.js",
+      "require": "./dist/cjs/scheduling/index.js"
+    },
+    "./time/helpers/*": {
+      "import": "./time/helpers/*.js",
+      "require": "./dist/cjs/time/helpers/*.js"
+    },
+    "./time/helpers": {
+      "import": "./time/helpers/index.js",
+      "require": "./dist/cjs/time/helpers/index.js"
+    },
+    "./time/*": {
+      "import": "./time/*.js",
+      "require": "./dist/cjs/time/*.js"
+    },
+    "./time": {
+      "import": "./time/index.js",
+      "require": "./dist/cjs/time/index.js"
+    },
+    "./timing/*": {
+      "import": "./timing/*.js",
+      "require": "./dist/cjs/timing/*.js"
+    },
+    "./timing": {
+      "import": "./timing/index.js",
+      "require": "./dist/cjs/timing/index.js"
+    },
+    "./todos/controllers/*": {
+      "import": "./todos/controllers/*.js",
+      "require": "./dist/cjs/todos/controllers/*.js"
+    },
+    "./todos/controllers": {
+      "import": "./todos/controllers/index.js",
+      "require": "./dist/cjs/todos/controllers/index.js"
+    },
+    "./todos/helpers/*": {
+      "import": "./todos/helpers/*.js",
+      "require": "./dist/cjs/todos/helpers/*.js"
+    },
+    "./todos/helpers": {
+      "import": "./todos/helpers/index.js",
+      "require": "./dist/cjs/todos/helpers/index.js"
+    },
+    "./todos/hooks/*": {
+      "import": "./todos/hooks/*.js",
+      "require": "./dist/cjs/todos/hooks/*.js"
+    },
+    "./todos/hooks": {
+      "import": "./todos/hooks/index.js",
+      "require": "./dist/cjs/todos/hooks/index.js"
+    },
+    "./todos/*": {
+      "import": "./todos/*.js",
+      "require": "./dist/cjs/todos/*.js"
+    },
+    "./todos": {
+      "import": "./todos/index.js",
+      "require": "./dist/cjs/todos/index.js"
+    },
+    "./users/helpers/*": {
+      "import": "./users/helpers/*.js",
+      "require": "./dist/cjs/users/helpers/*.js"
+    },
+    "./users/helpers": {
+      "import": "./users/helpers/index.js",
+      "require": "./dist/cjs/users/helpers/index.js"
+    },
+    "./users/hooks/*": {
+      "import": "./users/hooks/*.js",
+      "require": "./dist/cjs/users/hooks/*.js"
+    },
+    "./users/hooks": {
+      "import": "./users/hooks/index.js",
+      "require": "./dist/cjs/users/hooks/index.js"
+    },
+    "./users/*": {
+      "import": "./users/*.js",
+      "require": "./dist/cjs/users/*.js"
+    },
+    "./users": {
+      "import": "./users/index.js",
+      "require": "./dist/cjs/users/index.js"
+    },
+    "./worksheets/components/*": {
+      "import": "./worksheets/components/*.js",
+      "require": "./dist/cjs/worksheets/components/*.js"
+    },
+    "./worksheets/components": {
+      "import": "./worksheets/components/index.js",
+      "require": "./dist/cjs/worksheets/components/index.js"
+    },
+    "./worksheets/helpers/*": {
+      "import": "./worksheets/helpers/*.js",
+      "require": "./dist/cjs/worksheets/helpers/*.js"
+    },
+    "./worksheets/helpers": {
+      "import": "./worksheets/helpers/index.js",
+      "require": "./dist/cjs/worksheets/helpers/index.js"
+    },
+    "./worksheets/hooks/*": {
+      "import": "./worksheets/hooks/*.js",
+      "require": "./dist/cjs/worksheets/hooks/*.js"
+    },
+    "./worksheets/hooks": {
+      "import": "./worksheets/hooks/index.js",
+      "require": "./dist/cjs/worksheets/hooks/index.js"
+    },
+    "./worksheets/*": {
+      "import": "./worksheets/*.js",
+      "require": "./dist/cjs/worksheets/*.js"
+    },
+    "./worksheets": {
+      "import": "./worksheets/index.js",
+      "require": "./dist/cjs/worksheets/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@mtyk/frontend": "*",
+    "@reduxjs/toolkit": "1.8.3",
+    "eslint-plugin-relay-shared": "*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "index": "dist/cjs/index.js"
+}

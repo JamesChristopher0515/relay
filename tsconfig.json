@@ -1,0 +1,39 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["./src/assets/*"],
+      "assigned-resource/*": ["./src/assigned-resource/*"],
+      "appointments/*": ["./src/appointments/*"],
+      "check-in/*": ["./src/check-in/*"],
+      "content/*": ["./src/content/*"],
+      "conversations/*": ["./src/conversations/*"],
+      "core/*": ["./src/core/*"],
+      "debug/*": ["./src/debug/*"],
+      "dev/*": ["./src/dev/*"],
+      "feelings/*": ["./src/feelings/*"],
+      "health/*": ["./src/health/*"],
+      "home/*": ["./src/home/*"],
+      "journal-entries/*": ["./src/journal-entries/*"],
+      "journeys/*": ["./src/journeys/*"],
+      "journal/*": ["./src/journal/*"],
+      "logbook/*": ["./src/logbook/*"],
+      "onboarding/*": ["./src/onboarding/*"],
+      "questionnaires/*": ["./src/questionnaires/*"],
+      "reasons/*": ["./src/reasons/*"],
+      "resources/*": ["./src/resources/*"],
+      "settings/*": ["./src/settings/*"],
+      "thinking-points/*": ["./src/thinking-points/*"],
+      "today/*": ["./src/today/*"],
+      "todos/*": ["./src/todos/*"],
+      "worksheets/*": ["./src/worksheets/*"]
+    }
+  }
+}

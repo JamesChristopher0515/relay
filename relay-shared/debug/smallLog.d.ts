@@ -1,0 +1,1 @@
+//# sourceMappingURL=smallLog.d.ts.map

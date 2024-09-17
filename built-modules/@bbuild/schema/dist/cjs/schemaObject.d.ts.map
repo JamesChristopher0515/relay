@@ -1,0 +1,1 @@
+{"version":3,"file":"schemaObject.d.ts","sourceRoot":"/Volumes/SSD/Github/relay/modules/schema/src","sources":["schemaObject.ts"],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,KAAK,CAAA;AAG5B,wBAAgB,eAAe,CAAC,KAAK,EAAE,GAAG,EAAE,EAAE,MAAM,EAAE,IAAI,EAAE,EAAE;IAAE,MAAM,EAAE,MAAM,CAAC;IAAC,IAAI,EAAE,MAAM,CAAA;CAAE,OAK7F;AAED,wBAAgB,eAAe,CAAC,KAAK,EAAE,GAAG;;;EAOzC"}

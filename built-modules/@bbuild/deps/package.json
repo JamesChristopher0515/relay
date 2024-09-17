@@ -1,0 +1,83 @@
+{
+  "name": "@bbuild/deps",
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./TokenDepSpec": {
+      "import": "./dist/TokenDepSpec.js",
+      "require": "./dist/cjs/TokenDepSpec.js",
+      "types": "./dist/TokenDepSpec.d.ts"
+    },
+    "./baseDep": {
+      "import": "./dist/baseDep.js",
+      "require": "./dist/cjs/baseDep.js",
+      "types": "./dist/baseDep.d.ts"
+    },
+    "./createDepContext": {
+      "import": "./dist/createDepContext.js",
+      "require": "./dist/cjs/createDepContext.js",
+      "types": "./dist/createDepContext.d.ts"
+    },
+    "./index": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./interfaceDep": {
+      "import": "./dist/interfaceDep.js",
+      "require": "./dist/cjs/interfaceDep.js",
+      "types": "./dist/interfaceDep.d.ts"
+    },
+    "./packageDep": {
+      "import": "./dist/packageDep.js",
+      "require": "./dist/cjs/packageDep.js",
+      "types": "./dist/packageDep.d.ts"
+    },
+    "./private": {
+      "import": "./dist/private.js",
+      "require": "./dist/cjs/private.js",
+      "types": "./dist/private.d.ts"
+    },
+    "./provideDeps": {
+      "import": "./dist/provideDeps.js",
+      "require": "./dist/cjs/provideDeps.js",
+      "types": "./dist/provideDeps.d.ts"
+    },
+    "./tokenDep": {
+      "import": "./dist/tokenDep.js",
+      "require": "./dist/cjs/tokenDep.js",
+      "types": "./dist/tokenDep.d.ts"
+    },
+    "./typeDep": {
+      "import": "./dist/typeDep.js",
+      "require": "./dist/cjs/typeDep.js",
+      "types": "./dist/typeDep.d.ts"
+    },
+    "./zodDep": {
+      "import": "./dist/zodDep.js",
+      "require": "./dist/cjs/zodDep.js",
+      "types": "./dist/zodDep.d.ts"
+    }
+  },
+  "dependencies": {
+    "rxjs": "7.8.1",
+    "zod": "3.22.4",
+    "@bbuild/dash": "../dash",
+    "@bbuild/errors": "../errors",
+    "@bbuild/profile": "../profile",
+    "@bbuild/schema": "../schema",
+    "@bbuild/types": "../types"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "typescript": "4.9.5"
+  },
+  "main": "dist/cjs/index.js",
+  "index": "dist/cjs/index.js",
+  "module": "dist/index.js"
+}

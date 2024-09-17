@@ -1,0 +1,16 @@
+{
+  "name": "@bbuild/server-modules",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.js",
+  "index": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./index.js": "./index.js",
+    "./index.cjs": "./index.cjs"
+  }
+}

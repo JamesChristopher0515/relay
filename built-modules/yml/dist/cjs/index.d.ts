@@ -1,0 +1,2 @@
+export declare const readYaml: (file: string) => Promise<any>, writeYaml: (file: string, obj: any) => Promise<void>, editYaml: (file: string, edit: (obj: any) => any, create?: boolean) => Promise<void>, readYamlSync: (file: string) => any;
+//# sourceMappingURL=index.d.ts.map

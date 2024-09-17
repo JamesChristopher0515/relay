@@ -1,0 +1,35 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tagTypes = [
+    'User',
+    'UNAUTHORIZED',
+    'Client',
+    'Practitioner',
+    'Practice',
+    'Todo',
+    'Message',
+    'Category',
+    'Result',
+    'Questionnaire',
+    'QuestionnaireResult',
+    'AssignedResource',
+    'Content',
+    'Notification',
+    'Journey',
+    'AssignedJourney',
+    'ClientMilestoneStop',
+    'JourneySuggestion',
+    'ClientInsightsPreset',
+    'LoggedEvent',
+    'CheckIn',
+    'JournalEntry',
+    'Goal',
+    'ClientContent',
+    'Worksheet',
+    'ClientWorksheet',
+    'CaseNote',
+    'Appointment',
+    'RecurringAppointment',
+];
+exports.default = tagTypes;
+//# sourceMappingURL=tagTypes.js.map
